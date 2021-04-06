@@ -4,48 +4,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex Task</title>
+    <title>Kiko Dionisio 
+    </title>
     <style>
-         .flex-1{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-
-         }
-.left-side{
-background-color: cyan;
-flex: 1;
-margin:20px;
+body{background-color: black;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.middle-side{
-background-color: darkgoldenrod;
-flex: 1;
-margin:20px;
+h1{color: white;font-size: 80px;}
+.section1{
+    padding: 40px;
+    display: flex;
 }
-.third element{
-    background-color: darkorange;
+.navi{
+    text-decoration: none;
+    font-size: 40px;
+align-self: flex-start;
+color:white;
+flex:1;
+}
+.navi a{
+    color: white;
+}
+ul{list-style:none;}
+.art{
+    text-align: center;
+flex:3;
+color: white;
+}
+.photos{
+display: flex;
+flex: 1;
+align-self: flex-start;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px; 
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#work{  text-decoration: none;
+    font-size: 40px;
+    align-self:center;
+    color:white;
+    flex:1;
+    }
+    @media screen and (max-width: 1024px) {
+.row {   
+flex-direction: column;
+     }
+}
+/* Responsive Layout 400px */
+@media screen and (max-width: 400px) {
+.navi {
+float: none;
+width: 100%;
+      }
+}
+.footer{
+    padding: 40px;
     flex: 1;
-    margin: 20px;
+    
+}
+.section2{
+    display: flex;
+    justify-content:flex-end;
+}
+.contact{
+    flex: 1;
+color: white;
+text-align: right;
+margin-right: 20px;
+}
+.sub{
+text-align:right;
+
+}
+.sub a{
+text-decoration: none;
+color: white;
+padding: 20px;
+border: 2px solid white;
+border-radius: 15px;
+margin-right: 20px;
 }
     </style>
-<div> </div>
-
 </head>
 <body>
-    <div class="flex">
-       <div class= "flex-item-1">
-           First element
-       </div> 
-       <div class="flex-item-2">
-           second element
-       </div>
-       <div class="flex-item-3">
-           thrid element
-
-       </div>
+ <h1>Kiko Dionisio</h1>>
+    <div class="sub">
+<a href="#">NEWSLETTER</a>
 
     </div>
+    <div class="section1">
+    <div class= "navi"> 
+        <ul >
+        
+            <li>
+                <a href="home.html">Home</a>
+            </li>
 
+            <li>Art</li>
+            <li>Exhibition</li>
+            <li>Clip</li>
+        </ul>
+    </div>
+<div class="art">
+    <div class="row">
+        <div class="column">
+          <img src="Flo.png" alt="tatoo" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="Head.png" alt="tommy" style="width:100%">
+        </div>
+      
+      </div> 
+
+</div>
+
+    </div>
+    <div class="section1">
+        <div class= "navi"> 
+              </div>
+    <div class="art">
+        <div class="row">
+      
+            <div class="column">
+              <img src="Brut.png" alt="exhibition" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="Invitation.png" alt="exhibition2" style="width:100%">
+              </div>
+          </div> 
+    
+    </div>
+    
+        </div>
+        <div class="section1">
+            <div id= "work"> 
+                Directorwork
+                  </div>
+        <div class="art">
+            <iframe width="510" height="315" src="https://www.youtube.com/embed/cCDANuizp5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        </div>
+
+        </div>
+        <div class="section2">
+        <div class="footer">
+            <a href="https://www.instagram.com/kikodionisio_photography/">  <img src="logo insta.png" alt="instagram" style="width: 50px"></a>
+        </div>
+            <div class="contact">
+                Contact:kikodionisio@aol.de
+            </div>
+       
+        </div>
 </body>
 </html>
